@@ -5,55 +5,73 @@
     padding: 0;
     box-sizing: border-box;
 }
-.navbar{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    background-color: azure;
-    height: 100px;
-    padding: 0 1rem 0 1rem;
+
+:root{
+    --ff-primary: 'Inter', sans-serif;
+}
+body{
+    font-family: var(--ff-primary);
 }
 .logo__img{
-    width:80px;
-    /* object-fit: cover; */
+    width: 40px;
 }
-
-.nav__items{
-    
+.navbar{
+    padding: 2rem 8rem 2rem 8rem;
+    background-color: #21222A;
     display: flex;
-    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
 }
-
-.nav__list{
-padding: 0 2rem 0 2rem;
-list-style: none;
-font-size: 2rem;
-}
-
-.hero__h1{
-    padding: 5rem;
-    
-    font-size: 5rem;
-}
-.hero__list{
-   padding:0 5rem 0 5rem
-    
-}
-.hero__list>li{
-    list-style: none;
-    text-align: left;
-    font-size: 2rem;
-    margin-top: 1rem;
-}
-.footer{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 50px;
+.logo__container{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 1rem;
+}
+.logo__h3{
+    color: #61DAFB;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.logo__h4{
+    color: white;
+    font-size: 1rem;
+}
+
+.main{
+    background: url(./components/images/logo-overlay.png);
+    background-repeat: no-repeat;
+    background-position: right 40%;
+    min-height: calc(100vh - 6.5rem);
+    background-color: #282D35;
+    padding: 5rem 8rem 5rem 8rem;
+}
+.main__h1{
+    font-size: 4.5rem;
+    color: white;
+    padding-bottom: 4.5rem;
+}
+.main__list{
     
-    background-color: azure;
+    padding-left: 4rem;
+}
+.main__list>li{
+  
+    list-style: none;
+    color: white;
+    padding-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+.main__list li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #61DAFB; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; 
+    margin-left: -1em; 
+  }
+.logo__overlay{
+    position: absolute;
+    right: 0;
+    top: 35%;
 }

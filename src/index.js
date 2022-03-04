@@ -1,15 +1,7 @@
 import React from "react"
-import  ReactDOM  from "react-dom"
-import Hero from "./Hero"
-import Navbar from "./Navbar"
-import Footer from "./Footer"
+import ReactDOM from "react-dom";
 import "./index.css"
+import App from "./App";
 
 
-ReactDOM.render(
-<div>
-    <Navbar />
-    <Hero /> 
-    <Footer/>
-</div>
-    ,document.getElementById("root"))
+ReactDOM.render(App , document.getElementById("root"))
